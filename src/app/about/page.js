@@ -1,13 +1,11 @@
-import Hero from '@/components/Hero'
-import React from 'react'
+import React from "react";
 
-const Avv = () => {
+const About = () => {
   return (
     <>
-    <Hero/>
-    <div>page</div>
+      <div>About</div>
     </>
-  )
-}
+  );
+};
 
-export default Avv
+export default About;

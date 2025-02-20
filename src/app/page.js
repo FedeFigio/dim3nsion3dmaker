@@ -1,9 +1,19 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="">
+        <img src="/scritta.jpg"className="mx-auto" />
+      <div className="h-80 relative">
+        <img src="/hero.jpg" className="h-full w-full object-cover" />
+      </div>
+      <div className="container mx-auto flex">
+        <p className="text-center">
+          Servizio di progettazione e stampa 3D. Nasciamo come hobbisti in
+          questo settore con la passione per la stampa 3D. Ci stiamo evolvendo,
+          ampliando sempre più il nostro laboratorio già ben attrezzato di
+          numerose stampanti e scanner 3D per tutte le esigenze.
+        </p>
+      </div>
+      {/* <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -48,8 +58,8 @@ export default function Home() {
             Read our docs
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+      </main> */}
+      {/* <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
@@ -95,7 +105,7 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
-      </footer>
+      </footer> */}
     </div>
   );
 }
