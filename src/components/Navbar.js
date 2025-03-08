@@ -9,7 +9,7 @@ const Navbar = () => {
   };
   return (
     <div>
-      <nav className="bg-black">
+      <nav className="fixed z-40 w-full">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -18,7 +18,7 @@ const Navbar = () => {
                   setShow(!show);
                 }}
                 type="button"
-                className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset"
+                className="relative z-50 inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -60,31 +60,42 @@ const Navbar = () => {
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex shrink-0 items-center">
-                <img
-                  className="h-8 w-auto"
-                  src="/logo.jpg"
-                  alt="Your Company"
-                />
+                <Link
+                  className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white"
+                  href="/"
+                >
+                  <img
+                    className="h-8 w-auto hidden sm:block"
+                    src="/logo-4.png"
+                    alt="Your Company"
+                  />
+                </Link>
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
                   <Link
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white"
                     href="/"
                   >
-                    home
+                    HOME
                   </Link>
                   <Link
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white"
                     href="/about"
                   >
-                    Chi siamo
+                    CHI SIAMO
                   </Link>
                   <Link
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white"
                     href="/contacts"
                   >
-                    Contatti
+                    SERVIZI
+                  </Link>
+                  <Link
+                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white"
+                    href="/contacts"
+                  >
+                    CONTATTI
                   </Link>
                 </div>
               </div>
@@ -93,28 +104,34 @@ const Navbar = () => {
         </div>
 
         {show && (
-          <div className="sm:hidden" id="mobile-menu">
-            <div className="space-y-1 px-2 pt-2 pb-3 flex flex-col">
+          <div className="sm:hidden bg-menu h-screen w-screen fixed top-0" id="mobile-menu">
+            <div className="space-y-1 px-2 pt-2 pb-3 flex flex-col items-center gap-8 pt-8">
               <Link
                 onClick={toggle}
-                className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white"
                 href="/"
               >
-                home
+                HOME
               </Link>
               <Link
                 onClick={toggle}
-                className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white"
                 href="/about"
               >
-                Chi siamo
+                CHI SIAMO{" "}
               </Link>
               <Link
                 onClick={toggle}
-                className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white"
+                href="/about"
+              >
+SERVIZI              </Link>
+              <Link
+                onClick={toggle}
+                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white"
                 href="/contacts"
               >
-                Contatti
+                CONTATTI
               </Link>
             </div>
           </div>

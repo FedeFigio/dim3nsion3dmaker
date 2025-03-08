@@ -22,12 +22,50 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
       >
         <header>
           <Navbar />
         </header>
+
         {children}
+        <footer className="bg-black flex-col md:flex-row flex text-white py-20 border-t gap-10 md:gap-0 border-gray-500  px-8">
+          <div className="md:w-1/2  flex md:justify-center ">
+            <div className="flex flex-col gap-4">
+              <span className="text-2xl font-bold">CONTATTI</span>
+              <span>SEDE: Cassano Spinola, 15063 (AL)</span>
+              <span>WHATSAPP: +39 3792240111</span>
+              <span>TELEFONO: +39 3792240111</span>
+              <span>EMAIL: dim3nsion3dmaker@gmail.com</span>
+            </div>
+          </div>
+          <div className="md:w-1/2  flex md:justify-center ">
+            <div className="flex flex-col gap-4">
+              <span className="text-2xl font-bold">SEGUICI</span>
+              <span>Seguici su tutti i social per rimanere aggiornato</span>
+              <div className="flex gap-6">
+                <a
+                  href="https://www.instagram.com/dim3nsion3dmaker?fbclid=IwZXh0bgNhZW0CMTAAAR3pZXCEb3SRzAO68OvZl4i9G0vQAJxiiome1PE5OlG8cu7n7N-c2TF_C38_aem_y0jQLra6NszRDy0kIG3Xwg"
+                  target="_blank"
+                >
+                  <img src="/instagram.svg"></img>
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61567847644220"
+                  target="_blank"
+                >
+                  <img src="/facebook.svg"></img>
+                </a>
+                <a
+                  href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2F%40dim3nsion3dmaker%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR3QqgSij5YHTFHr-n9T_nGo_Fo5EB_B8_BytylgjWTngFf1k1CgVoTlb7Q_aem_BpnQx4qmKAN17zm1HCR7_Q&lang=en&enter_method=mandatory"
+                  target="_blank"
+                >
+                  <img src="/tiktok.svg"></img>
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );
