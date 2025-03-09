@@ -80,14 +80,15 @@ const Navbar = () => {
                     HOME
                   </Link>
                   <Link
-                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white"
-                    href="/about"
+                    disabled
+                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white opacity-50"
+                    href="#"
                   >
                     CHI SIAMO
                   </Link>
                   <Link
-                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white"
-                    href="/contacts"
+                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white opacity-50"
+                    href="#"
                   >
                     SERVIZI
                   </Link>
@@ -97,6 +98,12 @@ const Navbar = () => {
                   >
                     CONTATTI
                   </Link>
+                  <Link
+                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white opacity-50"
+                    href="#"
+                  >
+                    F.A.Q.
+                  </Link>
                 </div>
               </div>
             </div>
@@ -104,7 +111,10 @@ const Navbar = () => {
         </div>
 
         {show && (
-          <div className="sm:hidden bg-menu h-screen w-screen fixed top-0" id="mobile-menu">
+          <div
+            className="sm:hidden bg-menu h-screen w-screen fixed top-0"
+            id="mobile-menu"
+          >
             <div className="space-y-1 px-2 pt-2 pb-3 flex flex-col items-center gap-8 pt-8">
               <Link
                 onClick={toggle}
@@ -115,23 +125,31 @@ const Navbar = () => {
               </Link>
               <Link
                 onClick={toggle}
-                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white"
-                href="/about"
+                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white opacity-50"
+                href="#"
               >
                 CHI SIAMO{" "}
               </Link>
               <Link
                 onClick={toggle}
-                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white"
-                href="/about"
+                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white opacity-50"
+                href="#"
               >
-SERVIZI              </Link>
+                SERVIZI{" "}
+              </Link>
               <Link
                 onClick={toggle}
                 className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white"
                 href="/contacts"
               >
                 CONTATTI
+              </Link>
+              <Link
+                onClick={toggle}
+                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white opacity-50"
+                href="#"
+              >
+                F.A.Q.
               </Link>
             </div>
           </div>

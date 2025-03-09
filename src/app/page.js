@@ -10,78 +10,13 @@ export default function Home() {
       </div>
       <div className="bg-main min-h-full scroll-pb-20">
         <div className="px-10 mx-auto  text-white py-20  shadow-inset">
-          <p className="text-center">
-            Servizio di progettazione e stampa 3D. Nasciamo come hobbisti in
-            questo settore con la passione per la stampa 3D. Ci stiamo
-            evolvendo, ampliando sempre più il nostro laboratorio già ben
-            attrezzato di numerose stampanti e scanner 3D per tutte le esigenze.
+          <p className="text-center text-3xl font-bold">
+            SITO IN COSTRUZIONE
           </p>
-          <p className="text-center">
-            Servizio di progettazione e stampa 3D. Nasciamo come hobbisti in
-            questo settore con la passione per la stampa 3D. Ci stiamo
-            evolvendo, ampliando sempre più il nostro laboratorio già ben
-            attrezzato di numerose stampanti e scanner 3D per tutte le esigenze.
+          <p className="text-center text-xl font-bold">
+            La tua soluzione con la stampa 3d
           </p>
-          <p className="text-center">
-            Servizio di progettazione e stampa 3D. Nasciamo come hobbisti in
-            questo settore con la passione per la stampa 3D. Ci stiamo
-            evolvendo, ampliando sempre più il nostro laboratorio già ben
-            attrezzato di numerose stampanti e scanner 3D per tutte le esigenze.
-          </p>
-          <p className="text-center">
-            Servizio di progettazione e stampa 3D. Nasciamo come hobbisti in
-            questo settore con la passione per la stampa 3D. Ci stiamo
-            evolvendo, ampliando sempre più il nostro laboratorio già ben
-            attrezzato di numerose stampanti e scanner 3D per tutte le esigenze.
-          </p>
-          <p className="text-center">
-            Servizio di progettazione e stampa 3D. Nasciamo come hobbisti in
-            questo settore con la passione per la stampa 3D. Ci stiamo
-            evolvendo, ampliando sempre più il nostro laboratorio già ben
-            attrezzato di numerose stampanti e scanner 3D per tutte le esigenze.
-          </p>
-          <p className="text-center">
-            Servizio di progettazione e stampa 3D. Nasciamo come hobbisti in
-            questo settore con la passione per la stampa 3D. Ci stiamo
-            evolvendo, ampliando sempre più il nostro laboratorio già ben
-            attrezzato di numerose stampanti e scanner 3D per tutte le esigenze.
-          </p>
-          <p className="text-center">
-            Servizio di progettazione e stampa 3D. Nasciamo come hobbisti in
-            questo settore con la passione per la stampa 3D. Ci stiamo
-            evolvendo, ampliando sempre più il nostro laboratorio già ben
-            attrezzato di numerose stampanti e scanner 3D per tutte le esigenze.
-          </p>
-          <p className="text-center">
-            Servizio di progettazione e stampa 3D. Nasciamo come hobbisti in
-            questo settore con la passione per la stampa 3D. Ci stiamo
-            evolvendo, ampliando sempre più il nostro laboratorio già ben
-            attrezzato di numerose stampanti e scanner 3D per tutte le esigenze.
-          </p>
-          <p className="text-center">
-            Servizio di progettazione e stampa 3D. Nasciamo come hobbisti in
-            questo settore con la passione per la stampa 3D. Ci stiamo
-            evolvendo, ampliando sempre più il nostro laboratorio già ben
-            attrezzato di numerose stampanti e scanner 3D per tutte le esigenze.
-          </p>
-          <p className="text-center">
-            Servizio di progettazione e stampa 3D. Nasciamo come hobbisti in
-            questo settore con la passione per la stampa 3D. Ci stiamo
-            evolvendo, ampliando sempre più il nostro laboratorio già ben
-            attrezzato di numerose stampanti e scanner 3D per tutte le esigenze.
-          </p>
-          <p className="text-center">
-            Servizio di progettazione e stampa 3D. Nasciamo come hobbisti in
-            questo settore con la passione per la stampa 3D. Ci stiamo
-            evolvendo, ampliando sempre più il nostro laboratorio già ben
-            attrezzato di numerose stampanti e scanner 3D per tutte le esigenze.
-          </p>
-          <p className="text-center">
-            Servizio di progettazione e stampa 3D. Nasciamo come hobbisti in
-            questo settore con la passione per la stampa 3D. Ci stiamo
-            evolvendo, ampliando sempre più il nostro laboratorio già ben
-            attrezzato di numerose stampanti e scanner 3D per tutte le esigenze.
-          </p>
+      
         </div>
       </div>
       {/* <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
