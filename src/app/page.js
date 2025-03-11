@@ -1,22 +1,78 @@
+import Hero from "@/components/Hero";
+
 export default function Home() {
   return (
     <div className="">
-      {/* <img src="/scritta.jpg"className="mx-auto" /> */}
-      <div className="bg h-[200px] md:h-[400px] relative  shadow-xl shadow-[#C81064]">
-        <div className="absolute w-3/4 md:w-5/6 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2  rounded-xl overflow-hidden flex justify-center">
-          <img src="/logo-8.png" className="h-full  object-contain" />
-        </div>
-        <img src="/hero-4.png" className="h-full w-full object-cover" />
-      </div>
-      <div className="bg-main min-h-full scroll-pb-20">
-        <div className="px-10 mx-auto  text-white py-20  shadow-inset">
-          <p className="text-center text-3xl font-bold">
-            SITO IN COSTRUZIONE
-          </p>
-          <p className="text-center text-xl font-bold">
-            La tua soluzione con la stampa 3d
-          </p>
-      
+
+      <Hero></Hero>
+      <div className="min-h-full bg-gradient-to-b from-gray-900 to-black">
+        <div className="container mx-auto px-4 py-16 text-white">
+          <h1 className="text-4xl md:text-6xl font-bold text-center mb-8 bg-gradient-to-r from-pink-500 via-[#C81064] to-purple-500 text-transparent bg-clip-text">
+            Trasforma le tue idee in realtà
+          </h1>
+
+          <div className="grid md:grid-cols-3 gap-8 mt-12">
+            <div className="bg-black/30 p-6 rounded-xl border border-[#C81064]/30 hover:scale-105 transition-all">
+              <h3 className="text-2xl font-bold text-[#C81064] mb-4">
+                Prototipazione Rapida
+              </h3>
+              <p className="text-gray-300">
+                Dal concept al prototipo in tempi record. Realizziamo i tuoi
+                progetti con precisione millimetrica.
+              </p>
+            </div>
+
+            <div className="bg-black/30 p-6 rounded-xl border border-[#C81064]/30 hover:scale-105 transition-all">
+              <h3 className="text-2xl font-bold text-[#C81064] mb-4">
+                Stampa 3D Professionale
+              </h3>
+              <p className="text-gray-300">
+                Utilizziamo tecnologie all'avanguardia per garantire risultati
+                di alta qualità in ogni progetto.
+              </p>
+            </div>
+
+            <div className="bg-black/30 p-6 rounded-xl border border-[#C81064]/30 hover:scale-105 transition-all">
+              <h3 className="text-2xl font-bold text-[#C81064] mb-4">
+                Personalizzazione
+              </h3>
+              <p className="text-gray-300">
+                Ogni progetto è unico. Realizziamo le tue idee su misura, dal
+                design alla produzione.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-16 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+              I Nostri Servizi
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gradient-to-br from-black/40 to-[#C81064]/20 p-8 rounded-xl backdrop-blur-sm">
+                <h3 className="text-xl font-bold mb-4">
+                  Settori di Applicazione
+                </h3>
+                <ul className="space-y-2 text-gray-300">
+                  <li>• Automotive e Meccanica</li>
+                  <li>• Design e Architettura</li>
+                  <li>• Medicina e Odontoiatria</li>
+                  <li>• Arte e Scultura</li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-br from-black/40 to-[#C81064]/20 p-8 rounded-xl backdrop-blur-sm">
+                <h3 className="text-xl font-bold mb-4">
+                  Materiali Disponibili
+                </h3>
+                <ul className="space-y-2 text-gray-300">
+                  <li>• PLA e ABS Premium</li>
+                  <li>• PETG e TPU Flessibile</li>
+                  <li>• Resine Professionali</li>
+                  <li>• Materiali Compositi</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       {/* <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
