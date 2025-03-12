@@ -96,14 +96,14 @@ const Navbar = () => {
                   </Link>
                   <Link
                     disabled
-                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white opacity-50"
-                    href="#"
+                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white "
+                    href="/about"
                   >
                     CHI SIAMO
                   </Link>
                   <Link
-                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white opacity-50"
-                    href="#"
+                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white "
+                    href="/services"
                   >
                     SERVIZI
                   </Link>
@@ -114,8 +114,8 @@ const Navbar = () => {
                     CONTATTI
                   </Link>
                   <Link
-                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white opacity-50"
-                    href="#"
+                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white"
+                    href="/faq"
                   >
                     F.A.Q.
                   </Link>
@@ -140,15 +140,15 @@ const Navbar = () => {
               </Link>
               <Link
                 onClick={toggle}
-                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white opacity-50"
-                href="#"
+                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white "
+                href="/about"
               >
                 CHI SIAMO{" "}
               </Link>
               <Link
                 onClick={toggle}
-                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white opacity-50"
-                href="#"
+                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white "
+                href="/services"
               >
                 SERVIZI{" "}
               </Link>
@@ -161,8 +161,8 @@ const Navbar = () => {
               </Link>
               <Link
                 onClick={toggle}
-                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white opacity-50"
-                href="#"
+                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white "
+                href="/faq"
               >
                 F.A.Q.
               </Link>

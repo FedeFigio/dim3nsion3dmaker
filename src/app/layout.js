@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Orbitron } from "next/font/google";
+import { Orbitron } from "next/font/google";
 import "./globals.css";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -17,12 +17,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${orbitron.variable}   antialiased min-h-screen flex flex-col`}>
+      <body className={`${orbitron.variable} antialiased min-h-screen flex flex-col`}>
         <header>
           <Navbar />
         </header>
-        <div className="grow  bg-slate-500">{children}</div>
-  <Footer></Footer>
+        <div className="grow  bg-gradient-to-b from-gray-900 to-black">{children}</div>
+        <Footer />
       </body>
     </html>
   );

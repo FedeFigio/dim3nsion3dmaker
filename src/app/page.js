@@ -5,7 +5,7 @@ export default function Home() {
     <div className="">
 
       <Hero></Hero>
-      <div className="min-h-full bg-gradient-to-b from-gray-900 to-black">
+      <div className="min-h-full">
         <div className="container mx-auto px-4 py-16 text-white">
           <h1 className="text-4xl md:text-6xl font-bold text-center mb-8 bg-gradient-to-r from-pink-500 via-[#C81064] to-purple-500 text-transparent bg-clip-text">
             Trasforma le tue idee in realtà

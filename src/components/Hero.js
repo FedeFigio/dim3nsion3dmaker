@@ -6,10 +6,10 @@ const Hero = () => {
     <div className="relative h-screen bg-black overflow-hidden shadow-xl shadow-[#c81064]">
       {/* Background con effetto parallax */}
       <div className="absolute inset-0 opacity-60">
-        <img 
-          src="/hero-4.png" 
+        <img
+          src="/hero-4.png"
           className="h-full w-full object-cover scale-110 animate-slow-zoom"
-          alt="3D Printing Background" 
+          alt="3D Printing Background"
         />
       </div>
 
@@ -32,17 +32,31 @@ const Hero = () => {
 
         {/* Testo e CTA */}
         <div className="text-center text-white space-y-14">
-          <h1 className="text-5xl md:text-8xl font-bold bg-gradient-to-r from-pink-500 via-[#C81064] to-purple-500 text-transparent bg-clip-text animate-gradient">
-            DIMENSION 3D MAKER
-          </h1>
+          <div className="flex flex-col md:flex-row gap-4 items-center">
+            <img
+              className="w-1/3 md:w-1/4"
+              src="/logo-4.png"
+              alt="Your Company"
+            />
+            <h1 className="text-4xl md:text-7xl font-bold bg-gradient-to-r from-pink-500 via-[#C81064] to-purple-500 text-transparent bg-clip-text animate-gradient">
+              DIMENSION 3D MAKER
+            </h1>
+          </div>
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
-            Stampa 3D professionale per prototipazione rapida e produzione su misura
+            Stampa 3D professionale per prototipazione rapida e produzione su
+            misura
           </p>
           <div className="flex gap-4 justify-center mt-8">
-            <Link href="/servizi" className="px-8 py-3 bg-[#C81064] hover:bg-[#C81064]/80 rounded-full font-bold transition-all transform hover:scale-105">
+            <Link
+              href="/servizi"
+              className="px-8 py-3 bg-[#C81064] hover:bg-[#C81064]/80 rounded-full font-bold transition-all transform hover:scale-105"
+            >
               Scopri i Servizi
             </Link>
-            <Link href="/contatti" className="px-8 py-3 border-2 border-[#C81064] hover:bg-[#C81064]/10 rounded-full font-bold transition-all transform hover:scale-105">
+            <Link
+              href="/contatti"
+              className="px-8 py-3 border-2 border-[#C81064] hover:bg-[#C81064]/10 rounded-full font-bold transition-all transform hover:scale-105"
+            >
               Contattaci
             </Link>
           </div>
@@ -50,7 +64,15 @@ const Hero = () => {
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <svg className="w-6 h-6 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+          <svg
+            className="w-6 h-6 text-white"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
             <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
           </svg>
         </div>

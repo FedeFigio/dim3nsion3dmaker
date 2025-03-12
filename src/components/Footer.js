@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gradient-to-b from-black via-black to-[#C81064]/10">
+    <footer className="relative bg-gradient-to-b from-black via-black to-[#C81064]/80">
       {/* Top border decoration */}
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#C81064] to-transparent"></div>
 
