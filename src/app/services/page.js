@@ -15,12 +15,12 @@ const services = [
   },
   {
     title: "Stampa 3D",
-    description: "Realizzazione di prototipi e oggetti finiti con diverse tecnologie di stampa",
+    description: "Realizzazione di prototipi e oggetti finiti",
     icon: "🖨️",
   },
   {
-    title: "Consulenza",
-    description: "Supporto tecnico e consulenza per progetti di stampa 3D",
+    title: "Analisi",
+    description: "Studio di fattibilità di ogni progetto secondo le tecnologie da noi utilizzate",
     icon: "💡",
   },
 ];
@@ -37,12 +37,7 @@ const Services = () => {
         <h1 className="text-4xl md:text-5xl font-bold text-center text-white mb-8">
           I Nostri Servizi
         </h1>
-        <p className="text-center text-lg text-gray-200 mb-16">
-          Servizio di progettazione e stampa 3D. Nasciamo come hobbisti in
-          questo settore con la passione per la stampa 3D. Ci stiamo evolvendo,
-          ampliando sempre più il nostro laboratorio già ben attrezzato di
-          numerose stampanti e scanner 3D per tutte le esigenze.
-        </p>
+
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
@@ -61,17 +56,7 @@ const Services = () => {
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
-          className="mt-16 text-center"
-        >
-          <button              className="px-8 py-3 bg-[#C81064] hover:bg-[#C81064]/80 rounded-full font-bold transition-all transform hover:scale-105"
-          >
-            Contattaci per un Preventivo
-          </button>
-        </motion.div>
+
       </motion.div>
     </div>
   );

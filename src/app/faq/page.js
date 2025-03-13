@@ -1,5 +1,6 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Faq = () => {
@@ -8,11 +9,11 @@ const Faq = () => {
   const faqs = [
     {
       question: "Che materiali utilizzate per la stampa 3D?",
-      answer: "Utilizziamo diversi materiali come PLA, PETG, ABS, TPU e resine. La scelta del materiale dipende dalle specifiche esigenze del progetto e dall'utilizzo finale del prodotto."
+      answer: "Utilizziamo diversi materiali come PLA, PETG, ABS, TPU, POLICARBONATO, POLIPROPILENE, NYLON, e materiali tecnici caricati con fibre di carbonio o vetro. La scelta del materiale dipende dalle specifiche esigenze del progetto e dall'utilizzo finale del prodotto."
     },
     {
       question: "Quanto tempo richiede una stampa 3D?",
-      answer: "I tempi di stampa variano in base alla complessità del modello, alle dimensioni e alla qualità richiesta. Mediamente, possono andare da poche ore a diversi giorni per progetti più complessi."
+      answer: "I tempi di stampa variano in base alla complessità del modello, alle dimensioni e al tipo di materiale. Mediamente, possono andare da poche ore a diversi giorni per progetti più complessi."
     },
     {
       question: "Posso richiedere modifiche al modello 3D durante la progettazione?",
@@ -20,7 +21,7 @@ const Faq = () => {
     },
     {
       question: "Offrite un servizio di scansione 3D di oggetti esistenti?",
-      answer: "Sì, disponiamo di scanner 3D professionali per la digitalizzazione di oggetti esistenti, che possono poi essere modificati o replicati tramite stampa 3D."
+      answer: "Sì, disponiamo di scanner 3D per la digitalizzazione di oggetti esistenti, che possono poi essere modificati o replicati tramite stampa 3D."
     },
     {
       question: "Quali sono i tempi di consegna?",
@@ -88,10 +89,10 @@ const Faq = () => {
           <p className="text-gray-300 mb-6">
             Non hai trovato la risposta che cercavi?
           </p>
-          <button               className="px-8 py-3 bg-[#C81064] hover:bg-[#C81064]/80 rounded-full font-bold transition-all transform hover:scale-105"
+          <Link    href="/contacts"           className="px-8 py-3 bg-[#C81064] hover:bg-[#C81064]/80 rounded-full font-bold transition-all transform hover:scale-105"
           >
             Contattaci
-          </button>
+          </Link>
         </motion.div>
       </motion.div>
     </div>

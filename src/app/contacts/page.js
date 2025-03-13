@@ -15,7 +15,7 @@ const Contacts = () => {
         <h1 className="text-5xl font-bold text-center text-white mb-6">CONTATTACI</h1>
         <p className="text-lg text-center mb-12 text-[#C81064] max-w-2xl mx-auto">
           Hai domande o vuoi saperne di più? CONTATTACI e ti risponderemo il prima possibile, 
-          cercheremo insieme la soluzione più idonea alle tue esigenze
+          cercheremo insieme la soluzione più idonea alle tue esigenze partendo da uno studio di fattibilità.
         </p>
 
         <motion.div

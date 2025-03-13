@@ -7,15 +7,15 @@ const About = () => {
     {
       name: "Alberto Mascolo",
       role: "Founder & 3D Designer",
-      description: "Esperto di modellazione 3D con 5 anni di esperienza",
-      image: "/face.jpg"
+      description: "Esperto di modellazione 3D e processi di stampa",
+      image: "/placeholder.svg",
     },
-    {
-      name: "Laura Bianchi",
-      role: "Technical Specialist",
-      description: "Specialista in ottimizzazione dei processi di stampa 3D",
-      image: "/face.jpg"
-    }
+    // {
+    //   name: "Marika Poti",
+    //   role: "Technical Specialist",
+    //   description: "Specialista in ottimizzazione dei processi di stampa 3D",
+    //   image: "/face.jpg",
+    // },
   ];
 
   return (
@@ -38,9 +38,9 @@ const About = () => {
         >
           <p className="text-lg text-gray-200 leading-relaxed">
             Servizio di progettazione e stampa 3D. Nasciamo come hobbisti in
-            questo settore con la passione per la stampa 3D. Ci stiamo evolvendo,
-            ampliando sempre più il nostro laboratorio già ben attrezzato di
-            numerose stampanti e scanner 3D per tutte le esigenze.
+            questo settore con la passione per la stampa 3D. Ci stiamo
+            evolvendo, ampliando sempre più il nostro laboratorio già ben
+            attrezzato di numerose stampanti e scanner 3D per tutte le esigenze.
           </p>
         </motion.div>
 
@@ -51,12 +51,16 @@ const About = () => {
           transition={{ delay: 0.6 }}
           className="mb-16"
         >
-          <h2 className="text-3xl font-bold text-white mb-6">La Nostra Missione</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">
+            La Nostra Missione
+          </h2>
           <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg">
             <p className="text-gray-200">
-              Il nostro obiettivo è rendere la tecnologia di stampa 3D accessibile a tutti,
-              offrendo soluzioni innovative e personalizzate per ogni esigenza.
-              Crediamo nella potenza della creatività unita alla tecnologia.
+              Il nostro obiettivo è rendere la tecnologia di stampa 3D
+              accessibile a tutti, offrendo soluzioni innovative e
+              personalizzate per ogni esigenza. Crediamo nella potenza della
+              creatività unita alla tecnologia.
+              Ci piace sperimentare materiali nuovi così da far crescere costantemente le nostre conoscenze in questo settore. 
             </p>
           </div>
         </motion.div>
@@ -88,24 +92,15 @@ const About = () => {
                   {member.name}
                 </h3>
                 <p className="text-blue-300 text-center mb-3">{member.role}</p>
-                <p className="text-gray-300 text-center">{member.description}</p>
+                <p className="text-gray-300 text-center">
+                  {member.description}
+                </p>
               </motion.div>
             ))}
           </div>
         </motion.div>
 
-        {/* Contact CTA */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.8 }}
-          className="mt-16 text-center"
-        >
-          <button               className="px-8 py-3 bg-[#C81064] hover:bg-[#C81064]/80 rounded-full font-bold transition-all transform hover:scale-105"
-          >
-            Lavora Con Noi
-          </button>
-        </motion.div>
+
       </motion.div>
     </div>
   );

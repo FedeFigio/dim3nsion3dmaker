@@ -32,29 +32,29 @@ const Hero = () => {
 
         {/* Testo e CTA */}
         <div className="text-center text-white space-y-14">
-          <div className="flex flex-col md:flex-row gap-4 items-center">
+          <div className="flex flex-col  gap-4 items-center">
             <img
               className="w-1/3 md:w-1/4"
               src="/logo-4.png"
               alt="Your Company"
             />
             <h1 className="text-4xl md:text-7xl font-bold bg-gradient-to-r from-pink-500 via-[#C81064] to-purple-500 text-transparent bg-clip-text animate-gradient">
-              DIMENSION 3D MAKER
+              DIM3NSION 3D MAKER
             </h1>
           </div>
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
-            Stampa 3D professionale per prototipazione rapida e produzione su
-            misura
+            Service di stampa 3D per prototipazione e produzione su
+            misura mediante tecnologia di stampa FDM
           </p>
           <div className="flex gap-4 justify-center mt-8">
             <Link
-              href="/servizi"
+              href="/services"
               className="px-8 py-3 bg-[#C81064] hover:bg-[#C81064]/80 rounded-full font-bold transition-all transform hover:scale-105"
             >
               Scopri i Servizi
             </Link>
             <Link
-              href="/contatti"
+              href="/contacts"
               className="px-8 py-3 border-2 border-[#C81064] hover:bg-[#C81064]/10 rounded-full font-bold transition-all transform hover:scale-105"
             >
               Contattaci

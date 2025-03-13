@@ -1,9 +1,9 @@
 import Hero from "@/components/Hero";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="">
-
       <Hero></Hero>
       <div className="min-h-full">
         <div className="container mx-auto px-4 py-16 text-white">
@@ -17,8 +17,8 @@ export default function Home() {
                 Prototipazione Rapida
               </h3>
               <p className="text-gray-300">
-                Dal concept al prototipo in tempi record. Realizziamo i tuoi
-                progetti con precisione millimetrica.
+                Dal concept al prototipo realizziamo i tuoi progetti con
+                precisione millimetrica.
               </p>
             </div>
 
@@ -48,28 +48,40 @@ export default function Home() {
               I Nostri Servizi
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-black/40 to-[#C81064]/20 p-8 rounded-xl backdrop-blur-sm">
-                <h3 className="text-xl font-bold mb-4">
-                  Settori di Applicazione
-                </h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li>• Automotive e Meccanica</li>
-                  <li>• Design e Architettura</li>
-                  <li>• Medicina e Odontoiatria</li>
-                  <li>• Arte e Scultura</li>
-                </ul>
+         
+              <div className="bg-gradient-to-br flex flex-col  from-black/40 to-[#C81064]/20 p-8 rounded-xl backdrop-blur-sm">
+                <div>
+                  <h3 className="text-xl font-bold mb-4 text-left">
+                    Settori di Applicazione
+                  </h3>
+                  <ul className="space-y-2 text-gray-300">
+                    <li className="text-left">• Automotive e Meccanica</li>
+                    <li className="text-left"> • Home design e Architettura</li>
+                    <li className="text-left">• Arte e Scultura</li>
+                    <li className="text-left">• Gadget e oggettistica</li>
+                  </ul>
+                </div>
               </div>
 
-              <div className="bg-gradient-to-br from-black/40 to-[#C81064]/20 p-8 rounded-xl backdrop-blur-sm">
-                <h3 className="text-xl font-bold mb-4">
+              <div className="bg-gradient-to-br flex flex-col  from-black/40 to-[#C81064]/20 p-8 rounded-xl backdrop-blur-sm">
+                <h3 className="text-xl text-left font-bold mb-4">
                   Materiali Disponibili
                 </h3>
                 <ul className="space-y-2 text-gray-300">
-                  <li>• PLA e ABS Premium</li>
-                  <li>• PETG e TPU Flessibile</li>
-                  <li>• Resine Professionali</li>
-                  <li>• Materiali Compositi</li>
+                  <li  className="text-left">• PLA - PETG</li>
+                  <li  className="text-left">• ABS - ASA </li>
+                  <li  className="text-left">• PC - PP - PA</li>
+                  <li  className="text-left">• TPU</li>
+                  <li className="text-left">
+                    • Materiali tecnici caricati con fibre di vetro o carbonio{" "}
+                  </li>
                 </ul>
+                <Link
+                  href="/history#materials"
+                  className="px-8 mt-4 py-3 border-2 border-[#C81064] hover:bg-[#C81064]/10 rounded-full font-bold transition-all transform hover:scale-105"
+                >
+                  Scopri di più
+                </Link>
               </div>
             </div>
           </div>

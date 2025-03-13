@@ -24,7 +24,11 @@ const Navbar = () => {
   }, []);
   return (
     <div>
-      <nav className={`fixed z-40 w-full ${ scrolled ? "bg-black" : ""} transition-all`}>
+      <nav
+        className={`fixed z-40 w-full ${
+          scrolled ? "bg-gray-900" : ""
+        } transition-all`}
+      >
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -115,6 +119,18 @@ const Navbar = () => {
                   </Link>
                   <Link
                     className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white"
+                    href="/history"
+                  >
+                    3D HISTORY
+                  </Link>
+                  <Link
+                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white"
+                    href="/gallery"
+                  >
+                    GALLERIA
+                  </Link>
+                  <Link
+                    className=" rounded-md px-3 py-2 text-xl font-bold  text-white hover:bg-gray-700 hover:text-white"
                     href="/faq"
                   >
                     F.A.Q.
@@ -158,6 +174,20 @@ const Navbar = () => {
                 href="/contacts"
               >
                 CONTATTI
+              </Link>
+              <Link
+                onClick={toggle}
+                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white "
+                href="/history"
+              >
+                3D HISTORY{" "}
+              </Link>
+              <Link
+                onClick={toggle}
+                className="rounded-md px-3 py-2 text-sm  text-white hover:bg-gray-700 hover:text-white "
+                href="/gallery"
+              >
+                GALLERIA
               </Link>
               <Link
                 onClick={toggle}
